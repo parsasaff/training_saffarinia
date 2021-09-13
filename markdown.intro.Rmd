@@ -1,0 +1,19 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+cmd + option + i for new chunk
+
+```{r name}
+y <- 3*3
+x <- y*3
+x
+y
+
+```
+
