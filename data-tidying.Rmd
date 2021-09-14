@@ -1,0 +1,33 @@
+---
+title: "Data Cleaning"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+```
+
+Being specific about which version of filter, for example, you call is easy. To explicitly call a function by its unambiguous name, you use the syntax package_name::function_name(...). So, if I wanted to call the stats version of filter in this Rmarkdown document, I would use the syntax stats::filter(...).
+package_name::function_name()
+stats::filter()
+
+
+## Data sources
+
+Read in the data from the [KNB](https://knb.ecoinformatics.org/view/df35b.304.2)
+
+```{r}
+catch_original <- read.csv("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/df35b.302.1")
+```
+
+##clean and reshape data
+-remove unnecessary columns
+-check column types
+-reshape data
+
+#Join to regions definitions 
